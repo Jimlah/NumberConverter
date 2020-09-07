@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h1>Number Converter</h1>
+        </div>
+        <div id="cover">
+            <div id="wrapper">
+                <div class="selector-wrapper">
+                    <p>From</p>
+                    <select name="from" id="from">
+                        <option value="2">Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="10" selected>Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                </div>
+    
+                <div class="selector-wrapper">
+                    <p>To</p>
+                    <select name="to" id="to">
+                        <option value="2" selected>Binary</option>
+                        <option value="8">Octal</option>
+                        <option value="10">Decimal</option>
+                        <option value="16">Hexadecimal</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div id="display">
+                <input type="text" name="input" id="input" oninput="run()" value="0">
+    
+                <input type="text" name="input" id="output" value="0" disabled>
+            </div>
+        </div>
+    </div>
+
+    <script src="func.js"></script>
+</body>
+</html>
